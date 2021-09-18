@@ -1,0 +1,263 @@
+/*
+ * Globals
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,900&display=swap');
+
+@font-face {
+  font-family: 'undefined-medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/undefined-medium.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/undefined-medium.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src:
+  url("/fonts/undefined-medium.woff") format("woff"),
+  url("/fonts/undefined-medium.woff2") format("woff2"),
+  url("/fonts/undefined-medium.otf") format("opentype"),
+  url("/fonts/undefined-medium.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family: 'Bitter-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Bitter-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/Bitter-Regular.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src:
+  url("/fonts/Bitter-Regular.woff") format("woff"),
+  url("/fonts/Bitter-Regular.woff2") format("woff2"),
+  url("/fonts/Bitter-Regular.otf") format("opentype"),
+  url("/fonts/Bitter-Regular.ttf") format("truetype");
+  }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+html,
+body {
+  background: rgb(29, 1, 1);
+  background: linear-gradient(0deg, rgb(59, 4, 4) 0%, rgb(92, 7, 7) 56%, rgb(114, 9, 9) 87%);
+}
+html, body {
+  min-height: 100%;
+}
+header {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.video-background-holder {
+  position: relative;
+  height: 50vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  filter: blur(3px);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.navbar-nav, .navbar {
+  background-color: rgb(71, 6, 6);
+}
+
+.navbar {
+  box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 24px;
+  font-family: 'undefined-medium' !important;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.nav-link {
+  color: white !important;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0, .5);
+  font-size: 20px;
+}
+
+.disab {
+  color: rgb(177, 163, 163) !important;
+}
+
+.border-end {
+  border-right-width: 1 !important;
+  border-right-color: crimson !important;
+}
+
+.nav-link:hover {
+  color:cyan !important;
+  text-shadow: rgba(0,255,213,0.82) 0px 0px 10px;
+}
+
+.disab:hover {
+  color: gray !important;
+  text-shadow: rgba(146, 148, 148, 0.82) 0px 0px 10px;
+}
+
+.active {
+  color: gold !important;
+}
+
+.active:hover {
+  color:gold !important;
+  text-shadow: rgba(255, 251, 0, 0.82) 0px 0px 10px;
+}
+
+.blog-post {
+  border-color: black !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-height: 300px;
+}
+
+.tlr-start {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  text-shadow: 0 .1rem .1rem rgba(0,0,0, .5);
+  font-weight:100;
+}
+
+.tlr-start-2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:200;
+}
+
+.cria {
+  padding-left: 70px !important;
+}
+
+.blog-icon {
+  border-color: black !important;
+  background-color: transparent;
+}
+
+.blog-subicon {
+  font-family: 'undefined-medium', sans-serif;
+  color: cyan;
+}
+
+.blog-text {
+  padding-left: 2px !important;
+  color: gainsboro;
+}
+
+.blog-emp {
+  color: greenyellow;
+}
+
+.card-img {
+  opacity: 80%;
+}
+
+.card-img-overlay {
+  -webkit-box-shadow: inset 0px 0px 50px 9px rgba(0,0,0,0.85); 
+  box-shadow: inset 0px 0px 50px 9px rgba(0,0,0,0.85);
+}
+
+.card-img-overlay:hover {
+  -webkit-box-shadow: inset 0px 0px 0px 0px transparent; 
+  box-shadow: inset 0px 0px 0px 0px transparent;
+}
+
+.card {
+  border-color: black;
+}
+
+.card:hover {
+  border-color: crimson !important;
+}
+
+.tier-2 {
+  margin-top: 355px;
+}
+
+.bg-img {
+  background-image: url('/tlr/media/home/moltencore.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px black;
+  border-bottom: 1px black;
+}
+
+.cria2{
+  padding-left: 32px !important;
+}
+
+.bg-img2 {
+  background-image: url('/tlr/media/home/community.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px black;
+  border-bottom: 1px black;
+}
+
+.social {
+  border-left-color: rgb(70, 5, 5) !important;
+  border-left-width: 8px !important;
+  border-left-style:solid !important;
+  border-right-color: rgb(70, 5, 5) !important;
+  border-right-width: 8px !important;
+  border-right-style:solid !important;
+  background: rgba(70, 5, 5, 0.75);
+}
+
+.sc {
+  padding-top: 10vh;
+}
+
+.sc2 {
+  padding-bottom: 2vh;
+}
+
+.features-classbg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(10, 10, 13);
+}
+
+.features-classbg2 {
+  border-left-color: rgb(70, 5, 5) !important;
+  border-left-width: 8px !important;
+  border-left-style:solid !important;
+  border-right-color: rgb(70, 5, 5) !important;
+  border-right-width: 8px !important;
+  border-right-style:solid !important;
+}
